@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list </title>
+    <style>
+        .complete{
+            text-decoration: line-through;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo list</h1>
+    <ul>
+        <li>buy groceries</li>
+        <li>do laundary</li>
+        <li>clean house</li>
+    </ul>
+    <script>
+        const todolist=document.querySelectorAll('li');
+        todolist.forEach(item => {
+            item.addEventListener('click',() => {
+                item.classList.toggle('complete')
+            })
+        });
+    </script>
+</body>
+</html>

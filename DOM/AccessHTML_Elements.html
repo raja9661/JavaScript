@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1</title>
+</head>
+<body>
+    <h1 id="ids"><span></span>1. Accessing Head by ID</h1>
+    <ul>
+        <li class="lis">2. accessing list by class name</li>
+        <li class="lis">2. accessing list by class name</li>
+        <li class="lis">2. accessing list by class name</li>
+        <li class="lis">2. accessing list by class name</li>
+    </ul>
+    <h1 class="classes">hello</h1>
+    <h1 class="classes">hi</h1>
+    <h1 class="classes">bye</h1>
+    <h1 class="classes">good</h1>
+    <script>
+        // let ids=document.getElementById('ids');
+        // console.log(ids);
+        // console.log(ids.innerText); //it gives only content of body
+        // console.log(ids.innerHTML); //it gives contants as well as html tags if present
+        // ids.style.color='red';//we can add css
+        // ids.innerText='inner text is change';//change contant of element dynamically
+        // ids.className='abc';//we can add class name using className.
+        // ids.classList="abc def ghi";//add class list
+
+
+        // let ils=document.getElementsByClassName('lis');
+        // console.log(ils);
+        // console.log(ils[1].outerHTML);
+        // console.log(ils[0].outerText);
+        // ils[0].setAttribute('id','zero');
+        // console.log(ils[0].outerHTML);
+        // ils[1].style.color='red';
+
+        //accessing elements of html by query
+        // let classes=document.querySelector('.classes'); //by default it gives first element of matching class out of all
+        // console.log(classes);
+        // console.log(classes.innerHTML);
+        // let classes1=document.querySelectorAll('.classes');
+        // console.log(classes1);
+        // console.log(classes1[2].innerHTML);
+        // classes1[2].setAttribute('title','raja');//when hover on 3rd element itv show name raja
+
+        //accessing elements of html by tag name
+        let tag=document.getElementsByTagName('h1');
+        console.log(tag);
+
+    </script>
+</body>
+</html>

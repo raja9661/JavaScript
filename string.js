@@ -1,0 +1,10 @@
+let str='hello';
+let str1="hello";
+let str2=`hi`;
+console.log(str);
+console.log(str1);
+console.log(str2);
+let str3=`1+2=${1+2}`;
+console.log(str3);
+let s=str.slice(1,5);
+console.log(s);

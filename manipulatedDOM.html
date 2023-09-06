@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM manipulations</h1>
+    <script>
+        //here dir gives the property or methods that use to manipulated Dom
+        // console.dir(document);
+        //example 1:- finding our page domain
+        // console.log(document.domain);
+        // console.log(document.URL);
+        // document.title='DOM manipulation';
+        // console.log(document.body);
+        // console.log(document.head);
+        // to add something in body of our document
+        // const body=document.body;
+        // body.append('hello');
+        //to create new element
+        const body=document.body;
+        const div=document.createElement('div');
+        console.log(div);
+        div.innerText='i am in div';
+        body.append(div);
+
+        body.removeChild(div);
+        // body.remove(div);
+    </script>
+</body>
+</html>

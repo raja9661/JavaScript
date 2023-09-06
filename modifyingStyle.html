@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM manipulation</h1>
+    <div>
+        <span id="one" name="first">first</span>
+        <span id="two" name="second">second</span>
+    </div>
+    <script>
+        const div=document.querySelector('div');
+        const span1=document.getElementById('one');
+        const span2=document.getElementById('two');
+        console.log(span1.getAttribute('name'));
+        //add attribute
+        span1.setAttribute('name','abcd');
+        span1.removeAttribute('name');
+        span1.id='qwrt';
+        span2.classList.add('new-class');
+        span2.classList.remove('new-class');
+        span1.style.color='red';
+        span2.style.backgroundColor='yellow';
+    </script>
+</body>
+</html>

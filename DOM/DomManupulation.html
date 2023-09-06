@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+    <script>
+    //     //create element first select or access the element
+    // let p=document.createElement('p');
+    // p.innerText='yes, you create first element paragrph';
+    // // p.textContent='yes, you create first element paragrph';
+    // console.log(p);
+    // document.body.appendChild(p);//to add your tag in html body
+
+
+    //remove element first select or access the element
+    let ul=document.querySelector('ul'); //first select the parent element
+    console.log(ul);
+    let lists=document.querySelectorAll('li');
+    console.log(lists);
+    ul.removeChild(lists[1]);
+    // for(list of lists)
+    // {
+    //     ul.removeChild(list);
+    // }
+    </script>
+</body>
+</html>

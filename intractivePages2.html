@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add&Remove</title>
+</head>
+<body>
+    <h1>My favorite foods</h1>
+    <ul id="foodItems">
+        <li>momo</li>
+        <li>biriyani</li>
+    </ul>
+    <button id="addItem">AddItem</button>
+    <button id="removeItm">RemoveItem</button>
+    <script>
+        const addItem=document.querySelector('#addItem'); 
+        const removeItm=document.querySelector('#removeItm');
+        const items=document.querySelector('#foodItems');
+
+        addItem.addEventListener('click',()=>{
+            const newItem=document.createElement('li')
+            const newItemText=document.createTextNode('momo');
+            newItem.append(newItemText)
+            items.append(newItem)
+        })
+        removeItm.addEventListener('click',()=>{
+            const remv=document.querySelector('li:nth-child(3)')
+            items.removeChild(remv);
+        })
+    </script>
+</body>
+</html>
